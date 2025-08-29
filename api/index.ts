@@ -6,7 +6,7 @@ import { handle } from "hono/vercel";
 const app = new Hono().basePath("/api");
 
 app.use("/*", cors({
-  origin: "http://localhost:5173",
+  origin: "https://website-iot-assignment-2.vercel.app/",
   allowMethods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
 }));
 
